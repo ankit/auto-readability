@@ -1,0 +1,77 @@
+body {
+    background-color: #EDEBE8;
+    margin: 20px;
+    font-family: Corbel, 'Helvetica Neue', Arial, sans-serif;
+}
+
+#wrap {
+    width: 65%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+input[type=text] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 392px;
+    border-radius: 2px;
+}
+
+#sites {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.site {
+    line-height: 30px;
+    min-height: 30px;
+    width: 385px;
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+
+.site:hover {
+    background-color: #fafafa;
+}
+
+.closeButton {
+    -webkit-transition: .15s opacity;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEX///8FBQUGBgYDAwMDAwMDAwMGBgYGBgYFBQUAAAAFBQUAAAAEBAQDAwMDAwMDAwMDAwMDAwMAAABMcPQTAAAAE3RSTlMACwsPERIzNzk9PUZGSUxNT1dZm90FQAAAAFlJREFUGFedjEsOwCAIRFWoUvx7/8NWTLHdtrMgeS/DGPMvA+UeY3NLMLnXeAtMxIC9sNUKcOCc2SkvQ/Rig5m83w+yJ4Lg4cLOUmA1o8re3Dm1Etc7bP6YC1LBAmMNPdFwAAAAAElFTkSuQmCC") no-repeat;
+    height: 16px;
+    width: 16px;
+    float: right;
+    margin-top: 5px;
+    opacity: 0;
+}
+
+.closeButton:hover {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAQlBMVEX///////////97e3t5eXlqampoaGhnZ2dgYGBcXFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuQipPAAAAFnRSTlMAIDZPUFtdXmVpgIiMlqivtri60NLWYRh4wAAAAGlJREFUGNONTkkSgCAMs4gs0gBu//+qZRyq40VzSdvJ0mH4AzL0IBniEUhJYI41e6K4L9lcipAZLmwVtns8EkrBSJrqkJjvXUyF59negri1A09au1eMlhNcr10kjyZJ1tpml2Stfb3+gRPyMAOM6OD34wAAAABJRU5ErkJggg==");
+}
+
+.closeButton:active {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD///8AAAAAAADI23cLAAAABHRSTlMAAD7MYITzfAAAADJJREFUCNdjCAUCBgQR9oB7KkP4D/2rDGH/9k9lCNn/T5QhRP8HjABxwRIQJSDFqAYAAIjXHQebFIiyAAAAAElFTkSuQmCC");
+}
+
+.site:hover .closeButton {
+    opacity: 1;
+}
+
+.description {
+    color: #707065;
+    font-style: italic;
+    font-size: 13px;
+}
+
+#footer {
+    margin-top: 50px;
+}
+
+a {
+    color: #333;
+}

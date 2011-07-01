@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type='text/javascript'>
+
+// it will run on these sites by default
+var sites = [
+    'techcrunch.com',
+    'mashable.com',
+    'lifehacker.com',
+    'gigaom.com'
+];
+
+if (localStorage.sites) {
+    try {
+        sites = JSON.parse(localStorage.sites);
+    }
+    catch(e) {}
+}
+else
+    localStorage.sites = JSON.stringify(sites);
+
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+    if (request.name === 'getSites')
+        sendResponse(sites);
+});
+
+</script>
+</head>
+<body>
+</body>
+</html>

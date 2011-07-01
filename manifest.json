@@ -1,0 +1,24 @@
+{
+    "name": "Auto Readability",
+    "version": "0.1",
+    "description": "Run readability automatically for selected websites. Very experimental, run at your own risk!",
+    "background_page": "background.html",
+    "options_page": "options.html",
+
+    "icons": {
+        "128": "icon_128.png"
+    },
+
+    "content_scripts": [{
+        "matches":["<all_urls>"],
+
+        "js": [
+            "content.js"
+        ],
+
+        "run_at": "document_start",
+        "all_frames": true
+    }],
+
+    "permissions": ["tabs"]
+}
